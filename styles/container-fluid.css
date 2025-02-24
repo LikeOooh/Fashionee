@@ -1,0 +1,88 @@
+.container-fluid {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 50px;
+    margin-bottom: 199px;
+    padding-right: 120px;
+}
+
+.container-fluid .site-description {
+    box-sizing: border-box;
+    margin-top: 32px;
+    position: relative;
+    max-width: 850px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid .site-description .vector-object-354 {
+    position: absolute;
+    z-index: -1;
+    width: 354px;
+    height: 322px;
+    left: 60px;
+}
+
+.container-fluid .site-description .site-description-wrapper {
+    height: 100%;
+}
+
+.container-fluid .site-description .site-description-wrapper .site-name {
+    font-family: "Josefin Sans", serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 80px;
+    margin-top: 111px;
+    margin-left: 390px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.container-fluid .site-description .site-description-wrapper .breadcrumbs {
+    margin-top: 21px;
+    margin-left: 390px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.container-fluid .site-description .site-description-wrapper .breadcrumbs .crumb-list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    list-style-type: none;
+}
+
+.container-fluid .site-description .site-description-wrapper .breadcrumbs .crumb-list .crumb-vertical-line {
+    height: 15px;
+    width: 1.5px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.container-fluid .site-description .site-description-wrapper .breadcrumbs .crumb-list .crumb {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.container-fluid .site-description .site-description-wrapper .breadcrumbs .crumb-list .crumb.active {    
+    color: rgba(255, 142, 142, 1);
+}
+
+
+.container-fluid .site-description .site-description-wrapper .horizontal-line {
+    height: 2px;
+    max-width: 850px;
+    background-color: rgba(0, 0, 0, 1);
+    margin-top: 21px;
+    margin-bottom: 64px;
+}
+
+.container-fluid .site-image {
+    max-width: 800px;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(241, 242, 243, 1);
+}

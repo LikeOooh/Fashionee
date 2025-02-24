@@ -1,3 +1,16 @@
+* {
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(68, 68, 68, 1);
+}
+
+html {
+    justify-content: center;
+    min-width: 375px;
+}
+
 .container {
     max-width: 1140px;
     width: 100%;
@@ -11,4 +24,145 @@
     color: rgba(68, 68, 68, 50%);
     outline: none;
     padding: 0 0 15px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.container .button-wrapper {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    max-width: 240px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.container .button-wrapper .button {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    border: none;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 17px 74px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container .button-wrapper .vertical-line {
+    width: 2px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.container .price {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.container .price .current-price {
+    font-family: "Josefin Sans", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.container .price .old-price {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    font-family: "Josefin Sans", serif;
+    text-decoration: line-through;
+}
+
+.container .h3 {    
+    font-family: "Josefin Sans", serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38.4px;
+ }
+
+.container .h4 {
+    font-family: "Josefin Sans", serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
+    padding-bottom: 15px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.container .h5 {
+    font-family: "Josefin Sans", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.container .custom-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container .custom-list .item {
+    color: rgba(68, 68, 68, 1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;    
+}
+
+.container .custom-list .item::before {
+    content: "";
+    display: block;
+    background-image: url("../icons/square.svg");
+    width: 5px;
+    height: 5px;
+}
+
+.container .custom-list .item.active {
+    color: rgba(255, 142, 142, 1);
+    list-style: none;
+}
+
+.container .custom-list .item.active::before {
+    content: "";
+    display: flex;
+    width: 25px;
+    height: 3px;
+    background-image: url("../icons/small-row.svg");
+}
+
+.container .find-us .find-us-text {
+    margin: 0 0 20px 0;
+}
+
+.container .find-us .find-us-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.container .find-us .find-us-link a {
+    text-decoration: none;    
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    color: rgba(68, 68, 68, 1);
+}
+
+.container .find-us .find-us-links .line {
+    border-bottom: 1px solid #444444;
+    height: 1px;
+    width: 10px;
 }

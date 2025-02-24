@@ -7,26 +7,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Raleway:wght@100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/commons.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/container-fluid.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/cart.css">
+    <link rel="stylesheet" href="./styles/media.css">
     <title>Cart</title>
 </head>
 
 <body>
     <header class="header">
         <div class="left-side">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label class="burger" for="burger-checkbox"></label>
             <div class="logo-container">
-                <div class="burger-menu">
-                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
-                    <label class="burger" for="burger-checkbox"></label>
-                </div>
                 <div class="logo">
-                    <img src="./icons/logo.svg" alt="">
+                    <img src="./icons/logo.svg" alt="logo">
                 </div>
             </div>
             <div class="menu">
@@ -69,9 +69,139 @@
         </div>
     </header>
 
-    <br><br><br><br><br>
+    <div class="container-fluid">
+        <div class="site-description">
+            <img src="./icons/vector-object-354.svg" alt="vector-object-354" class="vector-object-354">
+            <div class="site-description-wrapper">
+                <div class="site-name">Cart</div>
+                <div class="breadcrumbs">
+                    <ul class="crumb-list">
+                        <li class="crumb-vertical-line"></li>
+                        <li class="crumb">Home</li>
+                        <li class="crumb">Shop</li>
+                        <li class="crumb active">Cart</li>
+                    </ul>
+                </div>
+                <div class="horizontal-line"></div>
+            </div>
+        </div>
+        <div class="site-image"></div>
+    </div>
+
+    <div class="container">
+        <div class="cart">
+            <div class="order-wrapper">
+                <div class="product-list">
+                    <div class="product">
+                        <div class="photo"></div>
+                        <div class="product-info">
+                            <div class="title">Fashionee - catton shirt (S)</div>
+                            <div class="price-wrapper">
+                                <div class="price-and-quantity">
+                                    <div class="price">
+                                        <div class="old-price">$52.99</div>
+                                        <div class="current-price">$35.99</div>
+                                    </div>
+                                    <div class="quantity">
+                                        <div class="count-button">-</div>
+                                        <div class="count">1</div>
+                                        <div class="count-button">+</div>
+                                    </div>
+                                </div>
+                                <div class="total-price">
+                                    $32.99
+                                </div>
+                            </div>
+                            <div class="close">x</div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="photo"></div>
+                        <div class="product-info">
+                            <div class="title">Spray wrap skirt</div>
+                            <div class="price-wrapper">
+                                <div class="price-and-quantity">
+                                    <div class="price">
+                                        <div class="old-price"></div>
+                                        <div class="current-price">$110.99</div>
+                                    </div>
+                                    <div class="quantity">
+                                        <div class="count-button">-</div>
+                                        <div class="count">1</div>
+                                        <div class="count-button">+</div>
+                                    </div>
+                                </div>
+
+                                <div class="total-price">
+                                    $32.99
+                                </div>
+                            </div>
+                            <div class="close">x</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="title">You Order</div>
+                    <div class="order-price-wrapper">
+                        <div class="price-row">
+                            <div class="name">Order price</div>
+                            <div class="price">$146.98</div>
+                        </div>
+                        <div class="price-row">
+                            <div class="name">Discount for promo code</div>
+                            <div>No</div>
+                        </div>
+                        <div class="price-row delimiter">
+                            <div class="name">
+                                Delivery <span class="additional">(Aug 02 at 16:00)</span>
+                            </div>
+                            <div class="price">$16</div>
+                        </div>
+                        <div class="price-row total">
+                            <div class="name">Total</div>
+                            <div class="price">$162.98</div>
+                        </div>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="button">Checkout</button>
+                        <div class="vertical-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="promo-code-wrapper">
+                <div class="info">
+                    <div class="title">You Have A Promo Code?</div>
+                    <div class="description">To receive up-to-date promotional codes, subscribe to us on social
+                        networks.</div>
+                </div>
+                <div class="promo-code">
+                    <input type="text" name="promo-code" class="input" placeholder="Enter promo code">
+                    <div class="button-wrapper">
+                        <button class="button">
+                            <img src="./icons/arrow.svg" alt="arrow">
+                        </button>
+                        <div class="vertical-line"></div>
+                    </div>
+                </div>
+                <div class="find-us">
+                    <div class="find-us-text">Find us here:</div>
+                    <div class="find-us-links">
+                        <div class="find-us-link"><a href="">FB</a></div>
+                        <div class="line"></div>
+                        <div class="find-us-link"><a href="">TW</a></div>
+                        <div class="line"></div>
+                        <div class="find-us-link"><a href="">INS</a></div>
+                        <div class="line"></div>
+                        <div class="find-us-link"><a href="">PT</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
+        <img src="./icons/vector-object-130.svg" alt="vector-object-130" class="vector-object-130">
+        <img src="./icons/vector-object-290.svg" alt="vector-object-290" class="vector-object-290">
         <div class="container">
             <div class="footer-info">
                 <div class="column column-1">
@@ -94,33 +224,35 @@
                     </div>
                 </div>
                 <div class="column column-2">
-                    <div class="title">About</div>
-                    <ul class="links">
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Collections</a></li>
-                        <li><a href="">Shop</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact us</a></li>
+                    <div class="title h5">About</div>
+                    <ul class="custom-list">
+                        <li class="item"><a href="">About us</a></li>
+                        <li class="item"><a href="">Collections</a></li>
+                        <li class="item"><a href="">Shop</a></li>
+                        <li class="item"><a href="">Blog</a></li>
+                        <li class="item"><a href="">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="column column-3">
-                    <div class="title">Useful links</div>
-                    <ul class="links">
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Terms of use</a></li>
-                        <li><a href="">Support</a></li>
-                        <li><a href="">Shipping details</a></li>
-                        <li><a href="">FAQs</a></li>
+                    <div class="title h5">Useful links</div>
+                    <ul class="custom-list">
+                        <li class="item"><a href="">Privacy Policy</a></li>
+                        <li class="item"><a href="">Terms of use</a></li>
+                        <li class="item"><a href="">Support</a></li>
+                        <li class="item"><a href="">Shipping details</a></li>
+                        <li class="item"><a href="">FAQs</a></li>
                     </ul>
                 </div>
                 <div class="column column-4">
-                    <div class="title">Newsletter</div>
+                    <div class="title h5">Newsletter</div>
                     <div class="newsletter-text">Subscribe to be the first to hear about deals, offers and upcoming
                         collections.</div>
                     <div class="newsletter-form">
                         <form action="">
-                            <input type="text" placeholder="Enter your email" class="newsletter-email">
-                            <img src="./icons/send.svg" alt="send" class="send-icon">
+                            <label>
+                                <input type="text" placeholder="Enter your email" class="input newsletter-email">
+                                <img src="./icons/send.svg" alt="send" class="send-icon">
+                            </label>
                         </form>
                     </div>
 

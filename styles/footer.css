@@ -1,21 +1,30 @@
-.footer {}
+.footer {
+    border-top: 20px solid rgba(238, 238, 238, 1);
+    position: relative;
+}
 
-.footer .container {}
+.footer .vector-object-130 {
+    position: absolute;
+    z-index: -1;
+    width: 130px;
+    height: 130px;
+    top: 30px;
+    left: 30px;    
+}
+
+.vector-object-290 {
+    position: absolute;
+    z-index: -1;
+    width: 290px;
+    height: 290px;
+    top: 85px;
+    right: 30px;    
+}
 
 .footer .container .footer-info {
-    margin: 0 0 90px 0;
+    margin: 110px 0 90px 0;
     display: flex;
 }
-
-.footer .container .footer-info .column{}
-
-.footer .container .footer-info .column .title{
-    font-family: "Josefin Sans", serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-}
-
 
 .footer .container .footer-info .column.column-1{
     max-width: 331px;
@@ -39,21 +48,18 @@
     width: 100%;
 }
 
-.footer .container .footer-info .column.column-2 .links, 
-.footer .container .footer-info .column.column-3 .links {
-    display: flex;
-    flex-direction: column;
+.footer .container .footer-info .custom-list .item{
     gap: 12px;
 }
 
-.footer .container .footer-info .column.column-2 .links a, 
-.footer .container .footer-info .column.column-3 .links a {
+.footer .container .footer-info .column .custom-list .item::before {
+    width: 3px;
+    height: 3px;
+}
+
+.footer .container .footer-info .column.column-2 .custom-list a, 
+.footer .container .footer-info .column.column-3 .custom-list a {
     text-decoration: none;
-    font-family: "Raleway", serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #444444;
 }
 
 .footer .container .footer-info .column.column-4 {
@@ -78,15 +84,7 @@
 }
 
 .footer .container .footer-info .column.column-4 .newsletter-form .newsletter-email {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #444444;
-    padding: 0 0 16px 0;
-    font-family: "Raleway", serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    outline: none;
+    padding: 0 30px 15px 0;
 }
 
 .footer .container .footer-info .column .logo{
@@ -95,42 +93,16 @@
 
 .footer .container .footer-info .column .about-brand {
     padding: 0 0 25px 0;
-    border-bottom: 1px solid #444444;
+    border-bottom: 1px solid rgba(68, 68, 68, 20%);
     margin: 0 0 35px 0;
-
-}
-
-.footer .container .footer-info .column .find-us {
-
-}
-
-.footer .container .footer-info .column .find-us .find-us-text {
-    margin: 0 0 20px 0;
-}
-
-.footer .container .footer-info .column .find-us .find-us-links {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.footer .container .footer-info .column .find-us .find-us-link a {
-    text-decoration: none;
-}
-
-.footer .container .footer-info .column .find-us .find-us-links .line {
-    border-bottom: 1px solid #444444;
-    height: 1px;
-    width: 10px;
 }
 
 .footer .container .copyright {
     display: flex;
     justify-content: space-between;
     gap: 15px;
-    border-top: 1px solid #444444;
+    border-top: 1px solid rgba(68, 68, 68, 20%);
     padding-top: 23px;
-
 }
 
 .footer .container .payment-methods-container {    
@@ -144,5 +116,3 @@
     gap: 8px;
     align-items: center;
 }
-
-.footer .container .payment-methods-container .payment-methods .payment-method {}

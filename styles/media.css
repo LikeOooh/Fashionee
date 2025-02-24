@@ -1,0 +1,214 @@
+@media screen and (max-width: 1200px) {
+
+    .container-fluid .site-image {
+        display: none;
+    }
+
+    .container {
+        max-width: 840px;
+    }
+
+    .shop .products-wrapper {
+        max-width: 564px;
+    }    
+
+    .shop {
+        gap: 20px;
+    }
+
+    .header .left-side,
+    .header .left-side .logo-container,
+    .header .left-side .menu,
+    .header .right-side {
+        gap: 30px;
+    }
+
+    .newsletter {
+        margin: 200px 0 120px 0;
+    }
+
+    .newsletter .newsletter-wrapper {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .header .left-side .menu {
+        display: none;
+    }
+
+    .header .left-side .burger-checkbox:checked~.menu {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 28px;
+        height: 140px;
+        width: 840px;
+        z-index: 1;
+        background-color: #ffffff;
+        flex-direction: column;
+    }
+
+    .container-fluid .site-description .site-description-wrapper .site-name,
+    .container-fluid .site-description .site-description-wrapper .breadcrumbs {
+        margin-left: 60px;
+    }     
+
+    .shop .products-wrapper .products {
+        gap: 10px;
+    } 
+
+    .shop .products-wrapper .products .product {
+        max-width: 200px;
+    }
+
+    .shop .products-wrapper .products .product .photo {
+        min-height: 300px;
+    }
+
+    .shop .products-wrapper .products .product .photo .top-bar {
+        max-width: 160px;
+    }
+
+    .newsletter .newsletter-wrapper {
+        margin: 40px;
+        max-width: 500px;
+    } 
+
+    .newsletter .newsletter-wrapper .vector-object-130 {
+        left: 337px;
+    }
+
+    .newsletter .newsletter-wrapper .newsletter-form .subscribe .newsletter-email {
+        min-width: 250px;
+    }
+
+    .newsletter .newsletter-wrapper .newsletter-form .subscribe .button-wrapper .button {
+        max-width: 120px;
+        padding: 17px 15px;
+    }
+
+    .cart .order-wrapper {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .cart .order-wrapper .order {
+        max-width: 720px;
+    }
+
+    .cart .promo-code-wrapper {
+        max-width: 720px;
+        padding: 40px;
+        justify-content: center;
+    }
+
+    .cart .order-wrapper .product-list .product .product-info .price-wrapper .price-and-quantity {
+        gap: 20px;
+    }
+
+    .cart, .footer {
+        padding: 40px;
+    }
+
+    .footer .vector-object-130,
+    .vector-object-290 {
+        display: none;
+    }
+
+    .footer .container .footer-info {
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: flex-start;
+    }
+
+    .footer .container .footer-info .column.column-1,
+    .footer .container .footer-info .column.column-2,
+    .footer .container .footer-info .column.column-3{
+        margin: 0 40px 30px 0;
+    }
+
+    .footer .container .footer-info .column.column-1,
+    .footer .container .footer-info .column.column-4{
+        max-width: 335px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    .header .left-side,
+    .header .left-side .logo-container,
+    .header .left-side .menu,
+    .header .right-side {
+        gap: 15px;
+    }
+
+    .container {
+        max-width: 360px;
+    }
+
+    .shop .sidebar {
+        display: none;
+    }
+
+    .shop .products-wrapper {
+        align-items: center;
+    }
+
+    .shop .products-wrapper .sort-and-count {
+        flex-direction: column;
+    }
+
+    .shop .products-wrapper .products {
+        justify-content: center;
+    }
+    .shop .products-wrapper .products .product {
+        max-width: 262px;
+    }
+
+    .shop .products-wrapper .products .product .photo {
+        min-height: 360px;
+    }
+
+    .shop .products-wrapper .products .product .photo .top-bar {
+        max-width: 222px;
+    }
+
+    .newsletter {
+        height: 300px;
+    }
+    
+    .newsletter .newsletter-wrapper {
+        max-width: 300px;
+        padding: 20px;
+    } 
+
+    .newsletter .newsletter-wrapper .vector-object-130 {
+        display: none;
+    }
+
+    .newsletter .newsletter-wrapper .newsletter-form .subscribe .newsletter-email {
+        min-width: 260px;
+        padding-right: 30px;
+    }
+
+    .newsletter .newsletter-wrapper .newsletter-form .subscribe .button-wrapper {
+        display: none;
+    }
+
+    .newsletter .newsletter-wrapper .newsletter-form .subscribe .send-icon {
+        display: inline;
+        position: absolute;
+        right: 15px;
+    }
+
+    .cart .order-wrapper .product-list .product .photo {
+        display: none;
+    }
+
+    .footer .container .copyright {
+        flex-direction: column;
+    }
+}
