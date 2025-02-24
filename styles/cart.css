@@ -174,6 +174,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-bottom: 250px;
 }
 
 .cart .promo-code-wrapper .info {
